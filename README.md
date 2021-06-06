@@ -29,7 +29,9 @@ In this analysis, I create and iterate through several random forest classifier 
 
 <img src="./images/pumps_by_location_by_groups.png" width=90%>
 
-> The figures above show pump location sorted by pump status and altitude. Non functional status and higher altitude seem to correlate.
+<img src="./images/pumps_by_avg_gps_height.png" width=90%>
+
+> The figures above show pump location sorted by pump status and altitude. Non functional status and lower altitude seem to correlate.
 
 #### Lower water quantity in a pump may indicate non functional status
 <img src="./images/pumps_by_quantity.png" width=90%>
@@ -50,7 +52,7 @@ In this analysis, I create and iterate through several random forest classifier 
 
 Based on this random forest classifier model, I would provide four recommendations to the Tanzanian Ministry of Water as they look to improve pump status prediction and maintenance efficiency:
 
-- **Location** `Longitude`, `latitude`, and `gps height` were some of the most important features in the random forest classifier. Based on the analysis, pumps in higher altitude areas may be more likely to need repair or be non functional. The Ministry should focus resources on higher altitude pumps.
+- **Location** `Longitude`, `latitude`, and `gps height` were some of the most important features in the random forest classifier. Based on the analysis, pumps in lower altitude areas may be more likely to need repair or be non functional. The Ministry should focus resources on higher altitude pumps.
 
 - **Quantity** `Quantity` was one of the most important features in the random forest classifier. Analysis showed that pumps with lower quantities of water were more likely to be non functional or needing repair. The Ministry should focus resources on pumps with low quantities of water.
 
