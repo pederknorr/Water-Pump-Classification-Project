@@ -52,7 +52,7 @@ In this analysis, I create and iterate through several random forest classifier 
 
 Based on this random forest classifier model, I would provide four recommendations to the Tanzanian Ministry of Water as they look to improve pump status prediction and maintenance efficiency:
 
-- **Location** `Longitude`, `latitude`, and `gps height` were some of the most important features in the random forest classifier. Based on the analysis, pumps in lower altitude areas may be more likely to need repair or be non functional. The Ministry should focus resources on higher altitude pumps.
+- **Location** `Longitude`, `latitude`, and `gps height` were some of the most important features in the random forest classifier. Based on the analysis, pumps in lower altitude areas may be more likely to need repair or be non functional. The Ministry should focus resources on lower altitude pumps.
 
 - **Quantity** `Quantity` was one of the most important features in the random forest classifier. Analysis showed that pumps with lower quantities of water were more likely to be non functional or needing repair. The Ministry should focus resources on pumps with low quantities of water.
 
@@ -65,7 +65,7 @@ Based on this random forest classifier model, I would provide four recommendatio
 
 However, the random forest model and analysis are not complete solutions, nor are they perfect. The final model still struggles with correctly identifying pumps classified as `functional needs repair`, too often mistaking them for `functional` pumps. But as `functional needs repair` pumps make up a very small part of the data set, I believe this to be a tolerable risk and that the model is accurate to a degree that makes it useful for the Ministry of Water as a tool to improve pump status prediction and maintenance efficiency.
 
-I could improve this analysis in the future by further transforming and scrubbing the data to create more helpful features and cleaner data, further tweaking the hyperparameters of the model, or by utilizing a XGBoost, LightGBM, or CatBoost model. However, due to the size of the data set, and my own computing limitations, I was unable to leverage those models at the time.
+I could improve this analysis in the future by further transforming and scrubbing the data to create more helpful features and cleaner data, further tweaking the hyperparameters of the model, or by utilizing a LightGBM, or CatBoost model to try and increase recall and accuracy, and decrease computing time.
 
 
 ### For further information
