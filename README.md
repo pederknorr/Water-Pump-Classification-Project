@@ -69,7 +69,7 @@ I could improve this analysis in the future by further transforming and scrubbin
 
 
 ### For further information
-Please review the narrative of our analysis in [my jupyter notebook](./water_pump_classification.ipynb) or review our [presentation](./WaterPumpClassificationDeck.pdf)
+Please review the narrative of our analysis in [my jupyter notebook](./water_pump_classification-final.ipynb) or review our [presentation](./WaterPumpClassificationDeck.pdf)
 
 For any additional questions, please contact Peder Norr at <norr.peder@gmail.com>
 
